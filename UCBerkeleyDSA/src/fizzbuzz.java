@@ -3,7 +3,10 @@ import java.util.Scanner;
 public class fizzbuzz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+
         int n = scanner.nextInt();
+        System.out.println("The Fizz, Buzz, and FizzBuzz numbers are: ");
         int count3 = 1;
         int count5 = 1;
 
