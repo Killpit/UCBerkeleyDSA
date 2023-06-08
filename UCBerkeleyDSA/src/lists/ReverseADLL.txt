@@ -1,0 +1,38 @@
+Follow the given steps to solve the problem using the above approach:
+
+-Traverse the linked list using a pointer
+-Swap the prev and next pointers for all nodes
+-At last, change the head pointer of the doubly linked list
+
+Reverse a Doubly Linked List using Stack:
+
+Push the node's data into the stack while traversing the doubly linked list, then pop out the elements from the
+stack and copy the value of the nodes of the linked list by again traversing it
+
+Follow the given steps to solve the problem using the above approach:
+
+-Traverse the whole Linked List and Keep pushing the node's data into the stack
+-Then keep popping the elements out of the stack and updating the Doubly Linked List
+
+To reverse a doubly linked list, we can follow the below algorithm:
+
+-Check if the head of the linked list is null or the next node is null. If yes, return the head of the list.
+-Initialize three pointers - current pointing to the head of the list, prev to null and next to null.
+-Traverse the linked list by moving the current pointer to the next node, and for each node, set its next pointer
+to point to the previous node and its prev pointer to point to the next node.
+-Once the traversal is complete, set the head of the list to point to the last node of the original linked list
+(which is now the first node of the reversed list).
+-Return the new head of the list
+
+Algorithmic Steps:
+
+1-Create a function to reverse the linked list, which takes the head node as input.
+2-Initialize three pointers: prevNode to NULL, currentNode to the head node, and nextNode to NULL.
+3-Traverse the linked list using a while loop until the currentNode pointer is not NULL.
+4-Inside the loop, assign nextNode as the next node of the currentNode using the next pointer.
+5-Set the next pointer of the currentNode to prevNode, effectively reversing the pointer direction of the
+currentNode.
+6-Update prevNode to the currentNode.
+7-Update currentNode to the nextNode.
+8-Finally, set the head node to prevNode and return it.
+
