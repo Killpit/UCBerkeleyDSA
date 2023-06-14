@@ -1,0 +1,123 @@
+Multidimensional arrays can be defined in simple words as array of arrays. Data in multidimensional arrays are
+stored in tabular form (in row major order).
+
+Syntax:
+
+data_type[1st dimension][2nd dimension][]...[Nth dimension] array_name = new
+data_type[size1][size2]...[sizeN];
+
+where:
+
+-data_type: Type of data to be stored in the array.
+-dimension: The dimension of the array created.
+-array_name: Name of the array
+-size1, size2, ..., sizeN: Sizes of the dimensions respectively
+
+Size of multidimensional arrays: The total number of elements that can be stored in a multidimensional array can be
+calculated by multiplying the size of all the dimensions.
+
+Application of Multi-Dimensional Array
+
+-Multidimensional arrays are used to store the data in tabular form.
+-In dynamic programming questions, multidimensional arrays are used which are used to represent the states of the
+problem
+-Apart from these, they also have applications in many standard algorithmic problems
+
+2D-Array
+
+2D-array is the simplest form of a multidimensional array. A 2D-array can be seen as an array of 1D-array for easier
+understanding.
+
+Indirect Method of Declaration:
+
+-Declaration-Syntax:
+
+data_type[][] array_name = new data_type[x][y];
+
+-Initialization-Syntax:
+
+array_name[row_index][column_index] = value;
+
+Accessing Elements of 2D-Arrays
+
+Elements in 2D-Arrays are commonly referred by x[i][j] where 'i' is the row number and 'j' ,s the column number
+
+Syntax:
+
+x[row_index][column_index]
+
+Note: In arrays, the size of array is N. Its index will be from 0 to N-1.
+
+Representation of 2D array in Tabular Format:
+
+A 2D array can be seen as a table with 'x' rows and 'y' columns where the row number ranges from 0 to (x-1) to 0 to
+(y-1).
+
+-To output all the elements of a 2D array, use nested for loops.
+
+3D-Array
+
+3d-Array is a complex form of a multidimensional array. A three-dimensional array can be seen as an array of 2D-array
+for easier understanding.
+
+Indirect Method of Declaration:
+
+-Declaration-Syntax:
+
+data_type[][][] array_name = new data_type[x][y][x];
+
+-Initialization-Syntax:
+
+array_name[array_index][row_index][column_index] = value;
+
+Direct Method of Declaration: Syntax:
+
+data_type[][][] array_name = {
+                              {
+                               {valueA1R1C1, valueA1R1C2, ....},
+                               {valueA1R2C1, valueA1R2C2, ....}
+                              },
+                              {
+                               {valueA2R1C1, valueA2R1C2, ....},
+                               {valueA2R2C1, valueA2R2C2, ....}
+                              }
+                             };
+
+Accessing Elements of 3D-Arrays
+
+Elements in 3D-arrays are commonly referred by x[i][j][k] where 'i' is the array number, 'j' is the row number and 'k'
+is the column number.
+
+Syntax:
+
+x[array_index][row_index][column_index]
+
+Representation of 3D array in Tabular Format:
+
+A 3d array can be seen as a table of arrays with 'x' rows and 'y' columns where the row number ranges from 0 to (x-1)
+and column number ranges from 0 to (y-1).
+
+Print 3D array in tabular format:
+
+To output all the elements of a 3D array, use nested for loops. For this three for loops are required, one to
+traverse the arrays, second to traverse the rows and another to traverse columns.
+
+Inserting a Multi-dimensional Array during Runtime:
+
+This topic is forced n taking user-defined input into a multidimensional array during runtime. It is focused on the
+user first giving all the input to the program during runtime and after all entered input, the program will give
+output with respect to each input accordingly. It is useful when the user wishes to make input for multiple
+test-cases with multiple different values first and after all those things are done, program will start providing
+output.
+
+Here are a few points that explain the use of the various elements in the upcoming code:
+
+-Row integer number is considered as the number of Test-Cases and Column values are considered as values in each
+Test-Case.
+-One for()loop is used for updating Test-Case number and another for() loop is used for taking respective array
+values.
+-As all input entry is done, again two for() loops are used in the same manner to execute the program according to
+the condition specified.
+-The first line of input is the total number of TestCases.
+-The second line shows the total number of first array values.
+-The third line gives array values and so on.
