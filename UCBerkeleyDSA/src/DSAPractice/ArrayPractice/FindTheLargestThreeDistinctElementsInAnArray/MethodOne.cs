@@ -42,6 +42,15 @@ class MethodOne {
         }
 
         third = first = second = 000;
-        
+        for (i = 0; i < arr_size; i++) {
+            //If current element is greater than first
+            if (arr[i] > first) {
+                third = second;
+                second = first;
+                first = arr[i];
+            }
+
+            
+        }
     }
 }
