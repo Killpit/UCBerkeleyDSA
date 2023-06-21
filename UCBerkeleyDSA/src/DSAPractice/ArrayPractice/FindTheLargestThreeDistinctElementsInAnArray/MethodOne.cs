@@ -27,3 +27,15 @@ package DSAPractice.ArrayPractice.FindTheLargestThreeDistinctElementsInAnArray;
 
 3) Print first, second and third.*/
 
+using system
+
+class MethodOne {
+
+    //Function to print three largest elements
+    static void print3largest(int[] arr, int arr_size) {
+        int i, first, second, third;
+
+        //There should be at least three elements
+        
+    }
+}
