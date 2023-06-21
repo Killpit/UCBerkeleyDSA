@@ -27,7 +27,7 @@ package DSAPractice.ArrayPractice.FindTheLargestThreeDistinctElementsInAnArray;
 
 3) Print first, second and third.*/
 
-using system
+using System;
 
 class MethodOne {
 
@@ -66,7 +66,8 @@ class MethodOne {
         //Driver code
         public static void Main() {
             int[] arr = new int[] {12, 13, 1, 10, 34, 1};
-            int n = arr.L
+            int n = arr.Length;
+            print3largest(arr, n);
         }
     }
 }
