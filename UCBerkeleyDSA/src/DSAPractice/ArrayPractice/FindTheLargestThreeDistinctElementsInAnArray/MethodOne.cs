@@ -50,7 +50,10 @@ class MethodOne {
                 first = arr[i];
             }
 
-            
+            //If arr[i] is in between first and second, then update second
+            else if (arr[i] < second && arr[i] != first) {
+                
+            }
         }
     }
 }
