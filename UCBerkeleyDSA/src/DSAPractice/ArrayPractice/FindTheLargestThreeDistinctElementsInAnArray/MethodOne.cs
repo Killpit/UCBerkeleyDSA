@@ -52,8 +52,14 @@ class MethodOne {
 
             //If arr[i] is in between first and second, then update second
             else if (arr[i] < second && arr[i] != first) {
-                
+                third = second;
+                second = arr[i];
             }
+
+            else if (arr[i] > third && arr[i] != second) {
+                third = arr[i];
+            }
+            
         }
     }
 }
