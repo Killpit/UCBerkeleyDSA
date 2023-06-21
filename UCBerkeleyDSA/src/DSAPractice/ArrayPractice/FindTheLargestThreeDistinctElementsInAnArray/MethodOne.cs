@@ -36,6 +36,12 @@ class MethodOne {
         int i, first, second, third;
 
         //There should be at least three elements
+        if (arr_size < 3 ) {
+            Console.WriteLine("Invalid Input");
+            return;
+        }
+
+        third = first = second = 000;
         
     }
 }
