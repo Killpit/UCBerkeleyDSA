@@ -59,7 +59,14 @@ class MethodOne {
             else if (arr[i] > third && arr[i] != second) {
                 third = arr[i];
             }
-            
+
+            Console.WriteLine("Three largest elements are " + first + " " + second + " " + third);
+        }
+
+        //Driver code
+        public static void Main() {
+            int[] arr = new int[] {12, 13, 1, 10, 34, 1};
+            int n = arr.L
         }
     }
 }
