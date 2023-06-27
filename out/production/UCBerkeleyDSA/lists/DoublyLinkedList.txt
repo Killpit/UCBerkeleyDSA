@@ -1,0 +1,69 @@
+A doubly linked list (DLL) is a special type of linked list in which each node contains a pointer to the previous
+node as well as the next node of the linked list.
+
+Advantages of Doubly Linked List over the singly linked list
+
+-A DLL can be traversed in both forward and backward directions
+-The delete operation in DLL is more efficient if a provider to the node to be deleted is given
+-We can quickly insert a new node before a given node
+-In a singly linked list, to delete a node, a pointer to the previous node is needed. To get this previous node,
+sometimes the list is traversed. In DLL, we can get the previous node using the previous pointer.
+
+Disadvantages of Doubly Linked List over the singly linked list
+
+-Every node of DLL requires extra space for a previous pointer. It is impossible to implement DLL with a single
+pointer though.
+-All operations require an extra pointer previous to be maintained.
+
+Applications of Doubly Linked List:
+
+-It is used by web browsers for backward and forward navigation of web pages.
+-LRU (Least Recently Used) / MRU (Most Recently Used) Cache are constructed using Double Linked Lists.
+-Used by various applications to maintain undo and redo functionalities.
+-In Operating Systems, a doubly linked list is maintained by thread scheduler to keep track of processes that are
+being executed at that time.
+
+Doubly Linked List meaning in DSA
+
+A doubly linked list is a special type of linked list in which each node contains a pointer to the previous node
+as well as the next node in the structure.
+
+Characteristics of the Doubly Linked List:
+
+The characteristics of a doubly linked list are as follows:
+
+-Dynamic size: The size of a doubly linked list can change dynamically, meaning that nodes can be added or removed
+as needed.
+-Two-way navigation: In a doubly linked list, each node contains pointers to both the previous and next elements,
+allowing for navigation in both forward and backward directions.
+-Memory overhead: Each node in a doubly linked list requires memory for two pointers (previous and next), in
+addition to the memory required for the data stored in the node.
+
+Application of Doubly Linked List
+
+-Implementing a Hash Table: Doubly linked lists can be used to implement hash tables, which are used to store and
+retrieve data efficiently based on a key.
+-Dynamic Memory Allocation: In systems programming, doubly linked lists can be used to manage dynamic memory
+allocation, where memory blocks are allocated and deallocated as needed.
+-Reversing a List: A doubly linked list can be used to reverse a list efficiently by swapping the previous and next
+pointers of each node.
+
+Advantages of Doubly Linked List
+
+-Two-way navigation: The doubly linked list structure allows for navigation in both forward and backward directions,
+making it easier to traverse the list and access elements at any position.
+-Efficient insertion and deletion: The doubly linked list structure allows for the efficient insertion and deletion
+elements at any position in the list. This can be useful in situations where elements need to be added or removed
+frequently.
+-Versatility: The doubly linked list can be used to implement a wide range of data structures and algorithms, making
+it versatile and useful tool in computer science.
+
+Disadvantages of Doubly Linked List
+
+-Memory overhead: Each node in a doubly linked list requires memory for two pointers (previous and next), in
+addition to the memory required for the data stored in the node. This can result in a higher memory overhead
+compared to a singly linked list, where only one pointer is needed.
+-Slower access times: Access times for individual elements in a doubly linked list may be slower compared to arrays,
+as the pointers must be followed to access a specific node.
+-Pointer manipulation: The doubly linked list structure requires more manipulation of pointers compared to arrays,
+which can result in more complex code and potential bugs.

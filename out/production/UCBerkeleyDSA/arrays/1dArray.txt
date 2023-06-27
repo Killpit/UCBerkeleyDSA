@@ -1,0 +1,5 @@
+-It is a list of the variable of similar data types
+-It allows random access and all the elements can be accessed with the help of their index
+-The size of the array is fixed
+-For a dynamically sized array, vector can be used in C++
+

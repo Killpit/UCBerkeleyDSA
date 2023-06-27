@@ -1,0 +1,104 @@
+It is the process of storing and accessing data from the memory to reduce the time to access specific data.
+
+Aims at storing data that can be helpful in the future.
+
+Why caching is important?
+
+-Plays a vital role in improving system performance.
+-Reduces the overall time and makes the system time efficient.
+-Caching is unavoidable as it provides high performance in computer technology.
+-It does not make any new requests.
+-It avoids reprocessing of the data.
+
+Use Case
+
+-Used to speed up database applications.
+-Acceleration of query.
+
+How caching mechanism works?
+
+A partition is reserved in RAM for cache memory. Whenever a software requests data from storage, cache memory
+checks if the required data is already present in it. If it does exist in the cache the application, will read
+this data from the cache. If the required data does not exist in the cache memory, then, the application will
+request the source. After reading the data, the same data is stored in cache memory for future references.
+
+As the cache memory is of limited size, the already existing data in the cache is to be removed for storing the new
+data. Caching system then requires an algorithm for removing the useless data. The algorithm will be designed to
+remove the data which is not going to get looked forward to soon.
+
+Types of Caching
+
+-Database Caching: Utilized for avoiding repeated queries. The last executed query result can be provided by the
+database immediately.
+
+-Memory caching: RAM is directly used for storing the cached data, this approach is faster than common database
+storage systems. Based on a set of key-value pairs in the database. The value is the cached data and the key is
+the unique value. Each set is uniquely identified. This approach is fast, efficient and easy to implement
+
+-Web caching:
+
+    -Web client caching: Known as web browser caching, the method is on the client-side. It accumulates page
+    resources. When the same page is hit, the browser can grab the resources from the cache. It is faster than
+    downloading from the internet.
+
+    -Web server caching: The resources are saved on the server-side aiming for the reuse of the resources. This
+    approach is helpful in the case of dynamic web pages and might not be useful for static web pages. It reduces
+    the overloading of the server, reduces the work, and increases the speed of page delivery.
+
+-CDN Caching: Aimed at caching resources in proxy servers. Acts as the gateway between the origin server and the
+user. It removes network latency and decreases the calling of the origin server.
+
+Challenges with caching
+
+-Local Cache: A cache coherence problem may occur as the locally cached resources are unevenly distributed from
+system to system, this process may slow down caching efficiency.
+
+-Cache Coherence problem: When one of the processors modifies its local copy of data that is shared among several
+caches, keeping numerous local caches in synchronized order becomes a challenge.
+
+-Cache penetration: When a user queries for data, the request is first sent to cache memory if the required data
+is present then it is sent to the user but if cache memory has no such data the request will be retransmitted to the
+main memory, and if the data is not present in the main memory it will result in NULL which causes cache penetration. This challenge can be overridden by the use of a bloom filter.
+
+-Cache avalanche: If cache memory fails at the same time that a user requests a large query,
+the database will be put under a tremendous amount of stress, perhaps causing the database to crash.
+This challenge can be overcome by using cache cluster and hystrix.
+
+Advantages of Cache:
+
+-Cache reduces the time taken to process a query, Cache minimizes the trip for requesting the same data.
+
+-Cache decreases the load on the server.
+
+-Cache increases the efficiency of system hardware.
+
+-Web page downloading/rendering speed is increased with the help of caching.
+
+Disadvantages of Cache:
+
+-Cache algorithms are hard and complex to implement.
+
+-Cache increases the complexity of an application.
+
+-High maintenance cost.
+
+Applications of Caching:
+
+The caching mechanism is used in the following industries:
+
+-Health and wellness: You’ll be able to deliver quick speed, save overall spending, and expand as your usage grows
+with an effective caching architecture.
+
+-Advertising technology: A millisecond can mean the difference between placing a bid on time and it becoming
+irrelevant when developing real-time bidding software. This necessitates a lightning-fast retrieval of bidding
+information from the database. Database caching, which can retrieve bidding data in milliseconds or less,
+is a terrific way to achieve that high level of speed.
+
+-Mobile: Your mobile apps can achieve the performance your consumers need, grow exponentially,
+and decrease your total cost with appropriate caching solutions.
+
+-Gaming and media: Caching helps to keep the game operating smoothly by delivering sub-millisecond query responses
+for commonly asked data.
+
+-Ecommerce: Well-executed caching management is a strategic part of response time that can be the key differentiator,
+between making a sale and losing a customer.

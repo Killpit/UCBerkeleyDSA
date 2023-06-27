@@ -1,0 +1,49 @@
+Add a node at the front in a DLL:
+
+-Firstly, allocate a new node (say new_node)
+-Now put the required data in the new node
+-Make the next of new_node point to the current head of the doubly linked list
+-Make the previous of the current head point to new_node
+-Lastly, point head to new_node
+
+Add a node in between two nodes
+
+It is further classified into the following two parts:
+
+Add a node after a given node in a Doubly Linked List:
+
+We are given a pointer to a node as prev_node, and the new node is inserted after the given node.
+
+-Firstly create a new node (say new_node)
+-Now insert the data in the new node
+-Point the next of new_node to the next of prev_node
+-Point the next of prev_node to new_node
+-Point the previous of new_node to prev_node
+-Change the pointer of the new node's previous pointer to new_node
+
+Add a node before a given node in a Doubly Linked List:
+
+Let the pointer to this given node be next_node.
+
+-Allocate memory for the new node, let it be called new_node
+-Put the data in new_node
+-Set the previous pointer of this new_node as the previous node of the next_node
+-Set the previous pointer of the next_node as the new_node
+-Set the next pointer of this new_node as the next_node
+-Now set the previous pointer of new_node
+    *If the previous node of the new_node is not NULL, then set the next pointer of this previous node as new_node
+    *Else, if the prev of new_node is NULL, it will be the new head node
+
+Add a node at the end in a Doubly Linked List:
+
+The new node is always added after the last node of the given Linked List. This can be done using the following 7
+steps:
+
+-Create a new node (say new_node)
+-Put the value in the new node
+-Make the next pointer of new_node as null
+-If the list is empty, make new_node as the head.
+-Otherwise, travel to the end of the linked list
+-Now make the next pointer of last node point to new_node
+-Change the previous pointer of new_node to the last node of the list
+

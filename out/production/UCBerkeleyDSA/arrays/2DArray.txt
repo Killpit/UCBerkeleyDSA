@@ -1,0 +1,6 @@
+-It is a list of lists of the variable of the same data type
+-It also allows random access and all the elements can be accessed with the help of their index
+-It can also be seen as a collection of 1D arrays. It is also known as the Matrix
+-Its dimension can be increased from 2 to 3 and 4 so on
+-They all are referred to as a multidimensional array.
+-The most common multidimensional array is a 2D array
