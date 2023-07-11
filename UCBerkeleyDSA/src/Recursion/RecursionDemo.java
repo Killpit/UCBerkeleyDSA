@@ -64,6 +64,31 @@ package Recursion;
 * different copy of local variables is created for each function call. When the base case is reached, the function
 * returns its value to the function by whom it is called and memory is de-allocated and the process continues.*/
 
+/*Recursion Use Cases
+*
+* Tree and graph traversal: Recursion is frequently used for traversing and searching data structures such as trees and
+* graphs. Recursive algorithms can be used to explore all the nodes or vertices of a tree or graph in a systematic way.
+*
+* Sorting algorithms: Recursive algorithms are also used in sorting algorithms such as quicksort and merge sort. These
+* algorithms use recursion to divide the data into smaller subarrays or sublists, sort them, and then merge them back
+* together.
+*
+* Divide-and-conquer algorithms: Many algorithms that use a divide-and-conquer approach such as the binary search
+* algorithm, use recursion to break down the problem into smaller subproblems.
+*
+* Fractal generation: Fractal shapes and patterns can be generated using recursive algorithms.
+*
+* Backtracking algorithms: Backtracking algorithms are used to solve problems that involve making a sequence of
+* decisions, where each decision depends on the previous ones. These algorithms can be implemented using recursion to
+* explore all possible paths and backtrack when a solution is not found.
+*
+* Memoization: Memoization is a technique that involves storing the results of expensive function calls and returning
+* the cached result when the same inputs occur again. Memoization can be implemented using recursive functions to
+* compute and cache the results of subproblems.*/
+
+//Time Complexity: O(1)
+//Auxiliary Space: O(1)
+
 class RecursionDemo {
 
     static void printfun(int test) {
