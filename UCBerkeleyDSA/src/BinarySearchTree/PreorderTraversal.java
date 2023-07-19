@@ -54,7 +54,6 @@ class PreorderTraversal {
     //Driver code
     public static void main(String[] args) {
 
-
         node root = null;
 
         //inserting values
